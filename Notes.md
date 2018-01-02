@@ -1,5 +1,71 @@
 # The HTML_CSS Learning Notes
 
+## 2018-01-01
+
+### **HTML Elements with Zero Height**
+
+  Check this [Stack Overflow](https://stackoverflow.com/questions/5369954/why-is-my-divs-height-zero) link first.
+
+  So the problem encountered in my project was that the `section` element "meals" and `ul` element "meals-showcase" were with zero height. Structure is as shown below.
+  ``` html
+  <section class="meals">
+        <ul class="meals-showcase">
+            <li>
+                <figure class="meals-photo"><img></figure>
+            </li>
+        </ul>
+  </section>
+  ```
+  CSS file looks like this:
+  ```css
+  .meals {
+    padding: 0;
+  }
+  .meals-showcase {
+      list-style: none;
+      width: 100%;
+  }
+
+  .meals-showcase li {
+      display: block;
+      float: left;
+      width: 25%;
+  }
+
+  /* figure tag: container for img elements */
+  .meals-photo {
+      width: 100%;
+      margin: 0;
+      overflow: hidden;
+      background-color: black;
+  }
+
+  .meals-photo img {
+      opacity: 0.6;
+      width: 100%;
+      height: auto;
+      transform: scale(1.15);
+      transition: transform 0.5s, opacity 0.5s;
+  }
+
+  .meals-photo img:hover {
+      opacity: 1;
+      transform: scale(1.03);
+  }
+  ```
+  Notice that for `li` element (child element of `ul` element for the `meal-showcase` class) a `float` attribute is set. Here one can consider the `ul` element as the container of the `li` element. The floating `li` element does not influence the height of its container. Therefore, `li` has height whereas `ul` does not.
+  The following changes can solve this problem:
+  ``` css
+    .meals-showcase {
+        list-style: none;
+        width: 100%;
+        overflow: hidden;
+    }
+  ```
+  *Further reading*: [Block formatting contexts](https://www.w3.org/TR/CSS21/visuren.html#block-formatting); [Containing Floats](http://complexspiral.com/publications/containing-floats/)
+
+---
+
 ## 2017-12-31
 
 ### **Suedo Class in CSS**
