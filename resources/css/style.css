@@ -297,3 +297,48 @@ display: inline-block;
     margin-right: 20px;
 
 }
+
+/*------ CITY ------ */
+.city-box {
+    overflow: hidden;
+}
+
+.city-box-pic {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    margin-bottom: 15px;
+}
+
+.city-box-pic img {
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    opacity: 0.7;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.city-box-pic img:hover {
+    transform: scale(1.04);
+    opacity: 1;
+}
+
+.city-info {
+    margin-bottom: 10px;
+}
+
+.city-info-icon {
+    color: #cf6d17;
+    margin-right: 25px;
+    float: left;
+
+}
+
+.city-info p {
+    word-spacing: 2px;
+}
+
+.city-twitter {
+    color: #e67e22;
+}
