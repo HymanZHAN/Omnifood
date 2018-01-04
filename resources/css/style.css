@@ -257,6 +257,14 @@ a:active {
     display: block;
 }
 
+.small-icon {
+    display: block;
+    color: #cf6d17;
+    margin-right: 25px;
+    float: left;
+    line-height: 120%;
+}
+
 
 /*------ STEPS ------ */
 
@@ -352,14 +360,7 @@ a:active {
     margin-bottom: 10px;
 }
 
-.city-info-icon {
-    display: block;
-    color: #cf6d17;
-    margin-right: 25px;
-    float: left;
-    line-height: 120%;
 
-}
 
 .city-info p {
     word-spacing: 2px;
@@ -406,4 +407,69 @@ cite img {
     vertical-align: middle;
 }
 
+/*------ PLANS ------ */
+
+.section-plans {
+    background-color: #f4f4f4;
+}
+
+.plan-box {
+    background: #fff;
+    border-radius: 10px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0px 2px 2px rgba(126, 125, 125, 0.5);
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.plan-box div:first-child {
+    background-color: #fcfcfc;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 5px 0;
+    font-weight: 150;
+    margin-left: 10px;
+}
+
+.plan-price {
+    font-size: 300%;
+    font-weight: 100;
+    margin-bottom: 10px;
+    color: #e67e22;
+}
+
+.plan-price span {
+    font-size: 30%;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 80%;
+    color: rgb(119, 119, 119);
+    margin-left: 10px;
+}
+
+.small-icon {
+    display: block;
+    color: #cf6d17;
+    margin-right: 25px;
+    float: left;
+    line-height: 120%;
+}
 
