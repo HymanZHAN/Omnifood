@@ -1,0 +1,85 @@
+
+/* ------ Tablets to PC 1024 to 1200px  ------ */
+
+@media only screen and (max-width: 1200px) {
+    .hero-text-box {
+        width:100%;
+        padding: 0 2%;
+    }
+    .row {
+        padding: 0 2%;
+    }
+}
+
+/* ------ Tablets to PC 768px to 1023px  ------ */
+
+@media only screen and (max-width: 1023px) {
+    body {
+        font-size: 18px;
+
+    }
+    .logo{
+        height: 70px;
+    }
+    section {
+        padding: 50px 0;
+    }
+    .features-intro {
+        width: 80%;
+        margin-left: 10%;
+    }
+    .steps-box {
+        margin-top: 10px;
+    }
+    .steps-box:last-child {
+        margin-top: 15px;
+    
+    }
+    .works-step{
+        margin: 40px 0;
+    }
+    .works-step:last-of-type {
+        margin-bottom: 60px;
+    }
+    .app-screen {
+        width: 50%;
+    }
+    .small-icon {
+        margin-right: 10px;
+    }
+    .plan-price {
+        font-size: 250%;
+    }
+    .contact-form {
+        width: 80%;
+    }
+}
+
+/* ------ Phones and Tablets 481px to 767px  ------ */
+
+@media only screen and (max-width: 767px) {
+    body {
+        font-size: 16px;
+    }
+    section {
+        padding: 30px 0;
+    }
+    .row,
+    .hero-text-box {
+        padding: 0 4%;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .main-navigation {
+        display: none;
+    }
+}
+
+/* ------ Small Phones 0px to 480px ------ */
+
+@media only screen and (max-width: 480px) {
+
+}
